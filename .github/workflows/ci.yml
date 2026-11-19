@@ -1,6 +1,6 @@
 name: CI
 
-on: [push, pull_request]
+on: [workflow_dispatch]  # archived branch: push/pull_request triggers disabled
 
 permissions: {}
 
@@ -44,7 +44,7 @@ jobs:
       - name: build check
         run: ci/run-build-and-tests.sh
       - name: upload coverage
-        uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5	# v7.1.1
+        uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
         with:
           fail_ci_if_error: true
           use_oidc: true
