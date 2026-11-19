@@ -1,0 +1,4 @@
+--timestamps=unix,us
+--absolute-timestamps=format:time,precision:ns
+--relative-timestamps=ms
+--syscall-times=ns

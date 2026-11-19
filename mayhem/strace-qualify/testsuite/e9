@@ -1,0 +1,1 @@
+inject=all:syscall=getpid:when=5..9+2:poke_enter=@arg1=deadbeef

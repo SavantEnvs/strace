@@ -1,0 +1,9 @@
+project: savantenvs/strace
+target: strace-syscall
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strace-syscall/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/strace-replay syscall @@ -v -o /dev/null
+    afl: true
+    timeout: 5

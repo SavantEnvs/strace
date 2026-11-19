@@ -1,0 +1,9 @@
+project: savantenvs/strace
+target: strace-options
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strace-options/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/strace-options @@
+    afl: true
+    timeout: 5

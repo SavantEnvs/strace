@@ -1,0 +1,1 @@
+fault=all:error=ENOSYS:when=1..4

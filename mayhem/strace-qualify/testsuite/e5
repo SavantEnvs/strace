@@ -1,0 +1,2 @@
+quiet=attach,exit,path-resolution,personality,thread-execve
+decode-fds=path,socket,dev,pidfd

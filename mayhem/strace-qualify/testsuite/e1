@@ -1,0 +1,2 @@
+inject=read:error=EAGAIN:when=2+3
+trace=read

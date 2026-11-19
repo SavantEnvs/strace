@@ -1,0 +1,4 @@
+read=0,1,2
+write=all
+verbose=!execve
+abbrev=none

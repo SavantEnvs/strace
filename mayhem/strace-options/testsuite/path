@@ -1,0 +1,6 @@
+-P/etc/passwd
+--trace-path=/tmp
+-f
+--seccomp-bpf
+-etrace=%file
+--syscall-limit=10

@@ -1,0 +1,9 @@
+project: savantenvs/strace
+target: strace-dump
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strace-dump/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/strace-replay syscall @@ -f -yy -xx -X verbose -e read=all -e write=all -T -ttt -s 4096 -o /dev/null
+    afl: true
+    timeout: 5

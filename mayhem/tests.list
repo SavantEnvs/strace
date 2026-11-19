@@ -1,0 +1,5 @@
+# Upstream tests (tests/*.test, tests/gen_tests.in) that mayhem/test.sh runs: each traces a
+# program from tests/*.c and diffs strace's output against the expected decoding.
+# Sourced by mayhem/build.sh (builds TEST_PROGRAMS) and mayhem/test.sh (runs TEST_SCRIPTS).
+TEST_PROGRAMS="execve execve-v bpf bpf-v netlink_route netlink_protocol nlattr net-sockaddr ioctl_evdev ioctl_v4l2 read-write seccomp-filter recvmsg sockaddr_xlat-Xabbrev"
+TEST_SCRIPTS="execve.test execve-v.test bpf.gen.test bpf-v.gen.test netlink_route.gen.test netlink_protocol.gen.test nlattr.gen.test net-sockaddr.gen.test ioctl_evdev.gen.test ioctl_v4l2.gen.test read-write.gen.test seccomp-filter.gen.test recvmsg.gen.test sockaddr_xlat-Xabbrev.gen.test qual_inject-syntax.test qual_syscall.test options-syntax.test"

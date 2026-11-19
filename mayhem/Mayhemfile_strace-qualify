@@ -1,0 +1,9 @@
+project: savantenvs/strace
+target: strace-qualify
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strace-qualify/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/strace-qualify @@
+    afl: true
+    timeout: 5

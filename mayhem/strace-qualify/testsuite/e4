@@ -1,0 +1,2 @@
+signal=!SIGCHLD,10,SIGTERM
+status=failed,unfinished

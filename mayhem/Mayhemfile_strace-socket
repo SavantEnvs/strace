@@ -1,0 +1,9 @@
+project: savantenvs/strace
+target: strace-socket
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/strace-socket/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/strace-replay socket @@ -v -yy -o /dev/null
+    afl: true
+    timeout: 5

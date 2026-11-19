@@ -1,0 +1,2 @@
+trace-fds=0-3,!5
+decode-pids=comm,pidns

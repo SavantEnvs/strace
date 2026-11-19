@@ -1,0 +1,8 @@
+-E FOO=bar
+-E-HOME
+--argv0=x
+--color=always
+--hyperlink=never
+-O100
+--summary-sort-by=time
+--columns=60

@@ -1,0 +1,4 @@
+-c
+-S calls
+--summary-columns=calls,errors,name
+-w

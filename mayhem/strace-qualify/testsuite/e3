@@ -1,0 +1,1 @@
+inject=open,openat:retval=42:signal=SIGUSR1:delay_enter=10ms:delay_exit=1s

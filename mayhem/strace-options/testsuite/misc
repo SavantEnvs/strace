@@ -1,0 +1,8 @@
+--stack-trace-frame-limit=5
+--decode-pids=comm,pidns
+--namespace=new
+--const-print-style=raw
+-I4
+-b execve
+-Ufull
+--tips=id:3,format:full

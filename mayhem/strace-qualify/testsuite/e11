@@ -1,0 +1,2 @@
+silence=attach,exit
+secontext=full,mismatch
